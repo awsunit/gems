@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
+import ImageProcessor from '../views/ImageProcessor.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "Home",
     component: Home,
+  },
+  {
+    path: '/imageProcessor',
+    name: 'ImageProcessor',
+    component: ImageProcessor,
   },
   {
     path: "/about",
